@@ -1,6 +1,6 @@
 # Pytorch implementation of SCL-Domain-Adaptive-Object-Detection
 ## Introduction 
-Please follow [faster-rcnn](https://github.com/jwyang/faster-rcnn.pytorch) repository to setup the environment. We used Pytorch 0.4.0 for this project. The different version of pytorch will cause some errors, which have to be handled based on each envirionment.
+Please follow [faster-rcnn](https://github.com/jwyang/faster-rcnn.pytorch) repository to setup the environment. This code is based on the implemenatation of **Strong-Weak Distribution Alignment for Adaptive Object Detection**. We used Pytorch 0.4.0 for this project. The different version of pytorch will cause some errors, which have to be handled based on each envirionment.
 <br />
 For convenience, this repository contains implementation of: <br />
 * SCL: Towards Accurate Domain Adaptive Object Detection via Gradient Detach Based Stacked Complementary Losses ([link]())<br />
@@ -13,7 +13,7 @@ We have included the following set of datasets for our implementation: <br />
 * **Clipart, WaterColor**: Dataset preparation instruction link [Cross Domain Detection](https://github.com/naoto0804/cross-domain-detection/tree/master/datasets). <br />
 * **PASCAL_VOC 07+12**: Please follow the instructions in [py-faster-rcnn](https://github.com/rbgirshick/py-faster-rcnn#beyond-the-demo-installation-for-training-and-testing-models) to prepare VOC datasets. <br />
 * **Sim10k**: Website [Sim10k](https://fcav.engin.umich.edu/sim-dataset/) <br />
-* **Cityscape-Translated Sim10k**: TBA <br />
+* **Cityscapes-Translated Sim10k**: TBA <br />
 * **KITTI** - For data prepration please follow [VOD-converter](https://github.com/umautobots/vod-converter) <br />
 * **INIT** - Download the dataset from this [website](http://zhiqiangshen.com/projects/INIT/index.html) and data preparation file can be found in this repository in [data preparation folder](https://github.com/harsh-99/SCL-Domain-adaptive-object-detection/tree/master/lib/datasets/data_prep).
 
@@ -58,18 +58,18 @@ To provide their path in the code check __C.VGG_PATH and __C.RESNET_PATH at lib/
 **Our trained model** <br />
 We are providing our models for foggycityscapes, watercolor and clipart.<br />
 1) Adaptation form cityscapes to foggycityscapes:<br />
-* VGG16 - [Google Drive](https://drive.google.com/open?id=1sciKY9BUnmAfSrJdM2vJCeoMzH0XclXl)<br />
-* ResNet101 - [Google Drive](https://drive.google.com/open?id=1figzDfm5_8jopD9SP1cJNl0u2MhYaW7o)<br />
+* VGG16 - [Google Drive](https://drive.google.com/open?id=1p5huR5TI_GLHCOwNXdZ4-BMwDNiFsYaB)<br />
+* ResNet101 - [Google Drive](https://drive.google.com/open?id=1yMV6UmJZjbs1nshcXsyIQ1w0DU4M4apD)<br />
 2) Adaptation from pascal voc to watercolor:<br />
-* Resnet101 - [Google Drive](https://drive.google.com/open?id=11hwlx5Y7Yam0IUuv49lL1qwJxUyf1QW1)<br />
+* Resnet101 - [Google Drive](https://drive.google.com/open?id=1aH83DuNoT3YDCnPzW8OssDcKCw3SajAY)<br />
 3) Adaptation from pascal voc to clipart:<br />
-* Resnet101 - [Google Drive](https://drive.google.com/open?id=1tzYhExZq2jJNmKLGEk8_-2bX_WkLnW22)
+* Resnet101 - [Google Drive](https://drive.google.com/open?id=1d7jFLUnzhuj3xkCrAdiXXiay6QcGv3RZ)
 
 ### Train
 
 We have provided sample training commands in train_scripts folder. However they are only for implementing our model.<br />
 I am providing commands for implementing all three models below.
-For SCL: Towards Accurate Domain Adaptive Object Detection via Gradient Detach Based Stacked Complementary Losses:
+For SCL: Towards Accurate Domain Adaptive Object Detection via Gradient Detach Based Stacked Complementary Losses -:
 ```
 CUDA_VISIBLE_DEVICES=$1 python trainval_net_SCL.py --cuda --net vgg16 --dataset cityscape --dataset_t foggy_cityscape --save_dir $2
 ```
