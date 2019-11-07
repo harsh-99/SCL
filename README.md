@@ -84,7 +84,7 @@ CUDA_VISIBLE_DEVICES=$1 python trainval_net_global_local.py --cuda --net vgg16 -
 
 ### Test
 
-We have provided sample testing commands in test_scripts folder for our model. For others please have a take reference of above training scripts. 
+We have provided sample testing commands in test_scripts folder for our model. For others please take a reference of above training scripts. 
 
 ### Citation
 If you use our code or find this helps your research, please cite:
