@@ -3,7 +3,7 @@
 Please follow [faster-rcnn](https://github.com/jwyang/faster-rcnn.pytorch) repository to setup the environment. This code is based on the implemenatation of **Strong-Weak Distribution Alignment for Adaptive Object Detection**. We used Pytorch 0.4.0 for this project. The different version of pytorch will cause some errors, which have to be handled based on each envirionment.
 <br />
 For convenience, this repository contains implementation of: <br />
-* SCL: Towards Accurate Domain Adaptive Object Detection via Gradient Detach Based Stacked Complementary Losses ([link]())<br />
+* SCL: Towards Accurate Domain Adaptive Object Detection via Gradient Detach Based Stacked Complementary Losses ([link](http://arxiv.org/abs/1911.02559))<br />
 * Strong-Weak Distribution Alignment for Adaptive Object Detection, CVPR'19 ([link](https://arxiv.org/pdf/1812.04798.pdf)) <br />
 * Domain Adaptive Faster R-CNN for Object Detection in the Wild, CVPR'18 (Our re-implementation) ([link](https://arxiv.org/pdf/1803.03243.pdf)) <br />
 
@@ -85,6 +85,19 @@ CUDA_VISIBLE_DEVICES=$1 python trainval_net_global_local.py --cuda --net vgg16 -
 ### Test
 
 We have provided sample testing commands in test_scripts folder for our model. For others please have a take reference of above training scripts. 
+
+### Citation
+If you use our code or find this helps your research, please cite:
+
+```
+@article{shen2019SCL,
+  title={SCL: Towards Accurate Domain Adaptive Object Detection via
+Gradient Detach Based Stacked Complementary Losses},
+  author={Zhiqiang Shen and Harsh Maheshwari and Weichen Yao and Marios Savvides},
+  journal={arXiv preprint arXiv:1911.02559},
+  year={2019}
+}
+```
 
 ### Examples
 <div align=center>
