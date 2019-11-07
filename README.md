@@ -1,4 +1,4 @@
-# Pytorch implementation of SCL-Domain-Adaptive-Object-Detection
+# Pytorch implementation of [SCL-Domain-Adaptive-Object-Detection](https://arxiv.org/abs/1911.02559) 
 ## Introduction 
 Please follow [faster-rcnn](https://github.com/jwyang/faster-rcnn.pytorch) repository to setup the environment. This code is based on the implemenatation of **Strong-Weak Distribution Alignment for Adaptive Object Detection**. We used Pytorch 0.4.0 for this project. The different version of pytorch will cause some errors, which have to be handled based on each envirionment.
 <br />
