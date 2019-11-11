@@ -27,7 +27,7 @@ $ cd ImageSets/Main
 $ ls
 train.txt val.txt trainval.txt test.txt
 ```
-**Note:** If you want to use this code on your own dataset, please arrange the dataset in the format of PASCAL, make dataset class in *lib/datasets/*, and add it to *lib/datasets/factory.py*, *lib/datasets/config_dataset.py*. Then, add the dataset option to *lib/model/utils/parser_func.py*.
+**Note:** If you want to use this code on your own dataset, please arrange the dataset in the format of PASCAL, make dataset class in *lib/datasets/*, and add it to *lib/datasets/factory.py*, *lib/datasets/config_dataset.py*. Then, add the dataset option to *lib/model/utils/parser_func.py* and *lib/model/utils/parser_func_multi.py*.
 
 ### Data path <br />
 Write your dataset directories' paths in lib/datasets/config_dataset.py.
